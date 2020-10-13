@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <link href="your-project-dir/font-css/LineIcons.css" rel="stylesheet">
+    <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+    <script src=" https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="lside">
+                <div class="menu">
+                    <img class="ppic" src="./img/ppic.jpg" alt="">
+
+                    <p class="pname">
+                        CHAKRAVRTHI SAKHAMURI
+                    </p>
+
+                    <div class="nav">
+                        <ul>
+                            <li id="1" class="active" onclick="tog(1)"><a href="#HOME">HOME</a></li>
+                            <li id="2" ><a href="#PORTFOLIO" onclick="tog(2)"> PORTFOLIO</a></li>
+                            <li id="3" ><a href="#RESUME" onclick="tog(3)"> RESUME</a></li>
+                            <li id="4" ><a href="#CAPTURE" onclick="tog(4)"> CAPTURE</a></li>
+                            <li id="5" ><a href="#CONTACT" onclick="tog(5)"> CONTACT </a></li>
+                        </ul>
+                    </div>
+                    <div class="line"></div>
+                    <div class="footer">
+                        <ul class="social">
+                            <li><i class="fa fa-facebook-f"></i></li>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-youtube"></i></li>
+                            <li><i class="fa fa-linkedin"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="center">
+            <div id="HOME">
+                <img src="./img/cap.jpg" class="pic" alt="">
+                <div class="name">
+                    <h3>hi there !<br>i'm chakravarthi</h3>
+                </div>
+            </div>
+            <div id="PORTFOLIO">
+               <p> _________ TAKE A LOOK AT _________</p>
+               <span><strong>BEST OF ME :-</strong></span>
+               <div class="hall">
+                    <div class="work">
+                        <div class="block1">
+                            <iframe src="https://18bq1a05g8.github.io/grid-temp/" frameborder="0"></iframe>
+                        </div>
+                        <div class="block2">
+                            <iframe src="https://18bq1a05g8.github.io/pot.com/" frameborder="0"></iframe>
+                        </div>
+                        <span><strong>FEW MORE</strong></span>
+                    </div>
+                </div>
+                <div class="more">
+                    <ul>
+                        <li><a href="https://18bq1a05g8.github.io/IncridibleIndia">IncridibleIndia</a></li>
+                        <li><a href="https://Youngcodings.github.io/hovereffect">HoverEffect</a></li>
+                        <li><a href="https://18bq1a05g8.github.io/Restaurant/">Restaurant</a></li>
+                        <li><a href="https://18bq1a05g8.github.io/GloryPage">GloryPage</a></li>
+                        <li><a href="https://18bq1a05g8.github.io/menuHTML">menuHTML</a></li>
+                        <li><a href="https://18bq1a05g8.github.io/HealthyLives">HealthyLives</a></li>
+                    </ul>
+                </div>
+                <span id="git">For More Visit My GitHub Acount :<a href="https://github.com/18BQ1A05G8">18BQ1A05G8</a></span>
+            </div>
+            <div id="RESUME">
+                <p>_________ MY RESUME _________</p>
+                <h3><strong>MY EXPERTISES</strong></h3>
+                <h4><strong>My Education</strong></h4>
+                <div class="edu">
+                    <div class="tenth">
+                        <p><strong>1-10 <sup>th</sup> standard</strong></p>
+                        <span>2006-2016</span>
+                        <p>Studied at Narayana E-Techno School <br> passed out with GPA-9.3 <br> ReddyPallem,Guntur</p>
+                    </div>
+                    <div class="inter">
+                        <p><strong>12 <sup>th</sup> standard</strong></p>
+                        <span>2016-2018</span>
+                        <p>Studied at Sri Chaithanya Junior Collage<br> passed out with percentage-96.6 <br> ReddyPallem,Guntur</p>
+                    </div>
+                    <div class="btech">
+                        <p><strong>Engineering</strong></p>
+                        <span>2018-2023</span>
+                        <p>Studying at Vassireddy Institute Of Technology with GPA-8.2 <br> Numbur,Guntur</p>
+                    </div>
+                    <div class="ms">
+                        <p><strong>Master Of Science</strong></p>
+                        <span>upcoming</span>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, id unde. Enim.</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div id="CAPTURE">
+                <p>_________ BEST OF MY CLICKS _________</p>
+                <!-- <img src="./img/view.jpg" alt=""> -->
+            </div>
+            <div id="CONTACT"></div>
+        </div>
+    </div>
+    <script>
+        function tog(num){
+           var findActive=document.querySelector('.active')
+            if(findActive!=null){
+                findActive.classList.remove('active')
+            }
+            num=num.toString();
+            var pd=document.getElementById(num);
+            pd.classList.toggle("active");
+        }
+        
+    </script>
+</body>
+</html>
